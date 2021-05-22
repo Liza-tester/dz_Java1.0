@@ -1,6 +1,7 @@
 package appline;
 
 import java.util.Scanner;
+import static java.lang.Math.floor;
 
 public class ArithmeticalMean {
     public static void main(String[] args) {
@@ -15,7 +16,7 @@ public class ArithmeticalMean {
         double ArMean = (x+y+z)/3;
         System.out.println("Arithmetical Mean = " + ArMean );
 
-        ArMean = (ArMean/2*100 - (ArMean/2*100)%1)/100;
+        ArMean = floor(ArMean * 100)/100.00;
 
         String Result = (ArMean > 3) ?  "Программа выполнена корректно" : "";
         System.out.println(Result);
