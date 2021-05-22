@@ -10,7 +10,7 @@ public class SumNumbers {
         int n = scan.nextInt();
 
         if (n < 1) {
-            System.out.println("Ошибка. Введено отрицательное число число");
+            System.out.println("Ошибка. Введено отрицательное число");
         }
         else {
             int sum = 0;
